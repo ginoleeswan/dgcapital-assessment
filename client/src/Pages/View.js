@@ -20,13 +20,18 @@ const View = () => {
   const [action, setAction] = useState("");
   const [editId, setEditId] = useState();
 
+  //close Modal
   const handleClose = () => {
     setShow(false);
   };
+
+  //show Add Modal
   const handleShowAdd = () => {
     setAction("Add");
     setShow(true);
   };
+
+  //show Edit Modal
   const handleShowEdit = (id, first_name, last_name, age, birthdate) => {
     setAction("Edit");
     setEditId(id);
@@ -37,6 +42,7 @@ const View = () => {
     setShow(true);
   };
 
+  //get age from birthdate
   const handleAge = (dateString) => {
     var today = new Date();
     var birthDate = new Date(dateString);
@@ -48,6 +54,7 @@ const View = () => {
     setAge(age);
   };
 
+  //API get
   const getPeople = async () => {
     let res = await axios.get("http://localhost:3001/people");
     let data = res.data;
@@ -55,6 +62,7 @@ const View = () => {
     setPeopleList(data);
   };
 
+  //API add
   const addPerson = async () => {
     const obj = {
       fName: name,
@@ -75,6 +83,7 @@ const View = () => {
     handleClose();
   };
 
+  //API update
   const updatePerson = async (id) => {
     const obj = {
       updates: {
@@ -98,6 +107,7 @@ const View = () => {
     handleClose();
   };
 
+  //API delete
   const deletePerson = async (id) => {
     await axios
       .delete(`http://localhost:3001/delete/${id}`)
@@ -111,6 +121,7 @@ const View = () => {
       });
   };
 
+  //pull current list from database
   useEffect(() => {
     getPeople();
   }, []);
@@ -130,6 +141,7 @@ const View = () => {
             </tr>
           </thead>
           <tbody>
+            {/* map data into table */}
             {peopleList.map((val, key) => {
               return (
                 <tr key={key}>
@@ -174,6 +186,7 @@ const View = () => {
       ) : null}
       <Button onClick={handleShowAdd}>Add New Person</Button>
 
+      {/* dynamic modal */}
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>{action} User</Modal.Title>
@@ -216,7 +229,6 @@ const View = () => {
                 }}
               ></Form.Control>
             </Form.Group>
-
             <Form.Group>
               <Button variant="primary" type="submit">
                 {action} User

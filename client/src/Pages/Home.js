@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import axios from "axios";
 import {
   BarChart,
@@ -14,6 +14,7 @@ import {
 const Home = () => {
   const [peopleList, setPeopleList] = useState([]);
 
+  //API call
   const getPeople = async () => {
     let res = await axios.get("http://localhost:3001/people");
     let data = res.data;
@@ -21,6 +22,7 @@ const Home = () => {
     setPeopleList(data);
   };
 
+  // get Month as a string from API birthdate data
   const findMonth = (dateString) => {
     var birthDate = new Date(dateString);
     var month = [];
@@ -41,10 +43,12 @@ const Home = () => {
     return n;
   };
 
+  //create array of birth months
   const listOfBirthMonths = peopleList.map((person) =>
     findMonth(person.birthdate)
   );
 
+  //find number of instances of birth month in array
   const numOfJan = listOfBirthMonths.filter((x) => x === "January").length;
   const numOfFeb = listOfBirthMonths.filter((x) => x === "February").length;
   const numOfMar = listOfBirthMonths.filter((x) => x === "March").length;
