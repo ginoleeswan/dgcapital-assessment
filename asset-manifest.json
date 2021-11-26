@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/dgcapital-assessment/static/js/main.54d3d8c3.chunk.js",
+    "main.js.map": "/dgcapital-assessment/static/js/main.54d3d8c3.chunk.js.map",
+    "runtime-main.js": "/dgcapital-assessment/static/js/runtime-main.65612fe8.js",
+    "runtime-main.js.map": "/dgcapital-assessment/static/js/runtime-main.65612fe8.js.map",
+    "static/css/2.383c0125.chunk.css": "/dgcapital-assessment/static/css/2.383c0125.chunk.css",
+    "static/js/2.acf818f2.chunk.js": "/dgcapital-assessment/static/js/2.acf818f2.chunk.js",
+    "static/js/2.acf818f2.chunk.js.map": "/dgcapital-assessment/static/js/2.acf818f2.chunk.js.map",
+    "index.html": "/dgcapital-assessment/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/dgcapital-assessment/static/css/2.383c0125.chunk.css.map",
+    "static/js/2.acf818f2.chunk.js.LICENSE.txt": "/dgcapital-assessment/static/js/2.acf818f2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65612fe8.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.acf818f2.chunk.js",
+    "static/js/main.54d3d8c3.chunk.js"
+  ]
+}
