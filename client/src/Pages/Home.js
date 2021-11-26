@@ -137,7 +137,7 @@ const Home = () => {
             margin={{
               top: 5,
               right: 0,
-              left: 30,
+              // left: 30,
               bottom: 50,
             }}
           >
