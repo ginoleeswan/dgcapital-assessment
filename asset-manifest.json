@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/dgcapital-assessment/static/js/main.54d3d8c3.chunk.js",
-    "main.js.map": "/dgcapital-assessment/static/js/main.54d3d8c3.chunk.js.map",
+    "main.js": "/dgcapital-assessment/static/js/main.2fbd131b.chunk.js",
+    "main.js.map": "/dgcapital-assessment/static/js/main.2fbd131b.chunk.js.map",
     "runtime-main.js": "/dgcapital-assessment/static/js/runtime-main.65612fe8.js",
     "runtime-main.js.map": "/dgcapital-assessment/static/js/runtime-main.65612fe8.js.map",
     "static/css/2.383c0125.chunk.css": "/dgcapital-assessment/static/css/2.383c0125.chunk.css",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.65612fe8.js",
     "static/css/2.383c0125.chunk.css",
     "static/js/2.acf818f2.chunk.js",
-    "static/js/main.54d3d8c3.chunk.js"
+    "static/js/main.2fbd131b.chunk.js"
   ]
 }
