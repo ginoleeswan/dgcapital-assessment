@@ -1,23 +1,13 @@
 import React, { useEffect, useState } from "react";
-import {
-  Button,
-  Col,
-  Container,
-  Form,
-  Modal,
-  Row,
-  Table,
-} from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import axios from "axios";
 import {
   BarChart,
   Bar,
-  Cell,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 
@@ -162,7 +152,6 @@ const Home = () => {
               }}
             />
             <Tooltip />
-            {/* <Legend /> */}
             <Bar dataKey="amount" fill="#8884d8" />
           </BarChart>
         </ResponsiveContainer>
