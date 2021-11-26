@@ -26,20 +26,22 @@
 &nbsp; I had some basic experience with MySQL **databases** & queries.\
 &nbsp; This was my first full attempt at creating a functioning **CRUD** application.
 
-&nbsp; This site also tested my skills in adapting & optimizing a responsive web page to fit on **mobile screens**.\
-&nbsp; After a bit of tweaking I settled on a simple vertical mobile view design where the product information stacks underneath.
+&nbsp; This project tested my skills in setting up a backend using NodeJS and Express utilizing MySQL.\
+&nbsp; I had a minor stuggle with the **UPDATE/PUT call** to the MySQL server, especially updating **multiple columns** at once.\
+&nbsp; After many visits to **stack overflow** I figured it out!.\
+&nbsp; Implementing the **dynamic table** became simple as the API call data from the server was organized into a new array.
 
 </div>
 
 ## 🔮 &nbsp; Future Features
 
-- 💻 &nbsp; Implement simple backend through AWS / Azure / headless CMS / Google Firebase
-- 🌐 &nbsp; Complete the full strucutre of website
+- 📊 &nbsp; Implement more dynamic charts
+- 👤 &nbsp; Add more attributes to back-end
 
 <h2 align="right">🚀 &nbsp; Deployment</h2>
 <div align="right">
 
-Deployed with [Github Pages](https://ginoleeswan.github.io/dotslash-frontend-test/)
+Deployed with [Github Pages](https://ginoleeswan.github.io/dgcapital-assessment/)
 
 </div>
 
@@ -49,10 +51,10 @@ From your command line, first clone this repo:
 
 ```sh
 # Clone this repository
-$ git clone https://github.com/ginoleeswan/dotslash-frontend-test/
+$ git clone https://github.com/ginoleeswan/dgcapital-assessment/
 
-# Go into the repository
-$ cd dotslash-frontend-test
+# Go into the client repository
+$ cd dgcapital-assessment/client
 
 # Remove current origin repository
 $ git remote remove origin
